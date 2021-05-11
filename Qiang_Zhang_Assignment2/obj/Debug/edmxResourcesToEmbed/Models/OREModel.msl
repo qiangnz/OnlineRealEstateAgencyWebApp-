@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OREDatabaseModelStoreContainer" CdmEntityContainer="OREDatabaseEntities1">
+    <EntitySetMapping Name="PropertyTables">
+      <EntityTypeMapping TypeName="OREDatabaseModel.PropertyTable">
+        <MappingFragment StoreEntitySet="PropertyTable">
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="NumberofRooms" ColumnName="NumberofRooms" />
+          <ScalarProperty Name="PropertyType" ColumnName="PropertyType" />
+          <ScalarProperty Name="FloorArea" ColumnName="FloorArea" />
+          <ScalarProperty Name="LandArea" ColumnName="LandArea" />
+          <ScalarProperty Name="RV" ColumnName="RV" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SellerTables">
+      <EntityTypeMapping TypeName="OREDatabaseModel.SellerTable">
+        <MappingFragment StoreEntitySet="SellerTable">
+          <ScalarProperty Name="SId" ColumnName="SId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

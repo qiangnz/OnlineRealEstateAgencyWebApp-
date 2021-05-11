@@ -1,0 +1,69 @@
+﻿
+@{
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/script/modernizr-2.8.3.js"></script>
+</head>
+
+
+<body>
+    <h2>Update Seller</h2>
+    <br />
+    <br />
+    <h4>Please Input ID, New Address and Email</h4>
+    <br />
+    <form method="get" action="~/UpdateSellerContact/updSeller">
+        <table class="b">
+            <tr>
+                <td>Enter Seller ID: </td>
+                <td><input type="number" style="width:200px" name="ID" min="1" max="500" required /></td>
+            </tr>
+            <tr>
+                <td>Change Address to: </td>
+                <td><input type="text" style="width:200px" name="add" required /></td>
+            </tr>
+            <tr>
+                <td>Change Email Address to: </td>
+                <td><input type="email" style="width:200px" name="emadd" title="Please Input Correct Email Address" required /></td>
+            </tr>
+        </table>
+        <br />
+        <input type="submit" />
+    </form>
+    <br/>
+    <table class="a" id="t01">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>Email Address</th>
+        </tr>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.SId</td>
+                <td>@i.FirstName @i.LastName</td>
+                <td>@i.Address</td>
+                <td>@i.PhoneNumber</td>
+                <td>@i.EmailAddress</td>
+
+            </tr>
+        }
+    </table>
+    <br />
+    <br />
+</body>
+</html>
+
+
+

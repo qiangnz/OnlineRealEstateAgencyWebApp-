@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/script/modernizr-2.8.3.js"></script>
+</head>
+
+<body>
+    <h1>New Seller Added</h1>
+    <br />
+    <table class="b">
+        <tr>
+            <td>Seller Name: </td>
+            <td>@Model.FirstName @Model.LastName</td>
+        </tr>
+        <tr>
+            <td>Address: </td>
+            <td>@Model.Address</td>
+        </tr>
+        <tr>
+            <td>Phone Number: </td>
+            <td>@Model.PhoneNumber</td>
+        </tr>
+        <tr>
+            <td>Email Address: </td>
+            <td>@Model.EmailAddress</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/script/modernizr-2.8.3.js"></script>
+</head>
+<body>
+    <h2>Add House</h2>
+    <br />
+    <form method="post" action="~/AddHouse/addNewHouse">
+        <table class="b">
+            <tr>
+                <td>Suburb: </td>
+                <td><input type="text" style="width:200px" name ="Suburb" pattern="[a-zA-Z\s]+$" title="Please Input Letters as Suburb" required/></td>
+            </tr>
+            <tr>
+                <td>Location: </td>
+                <td><input type="text" style="width:200px" name="Location" pattern="[a-zA-Z\s]+$" title="Please Input Letters as Location" required/></td>
+            </tr>
+            <tr>
+                <td>Number of Rooms: </td>
+                <td><input type="number" style="width:200px" name="NumberofRooms" min="1" max="50" required/> </td>
+            </tr>
+            <tr>
+                <td>Property Type: </td>
+                <td>
+                    <select name="PropertyType" style="width:200px" required>
+                        <option value="">Select Property Type</option>
+                        <option Apartment>Apartment</option>
+                        <option House>House</option>
+                        <option Lifestyle bare land>Lifestyle bare land</option>
+                        <option Lifestyle dwelling>Lifestyle dwelling</option>
+                        <option Section>Section</option>
+                        <option Townhouse>Townhouse</option>
+                        <option Unit>Unit</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Floor Area: </td>
+                <td><input type="number" style="width:200px" name="FloorArea" min="1" max="5000" required/></td>
+            </tr>
+            <tr>
+                <td>Land Area: </td>
+                <td><input type="number" style="width:200px" name="LandArea" min="1" max="10000" required /></td>
+            </tr>
+            <tr>
+                <td>RV: </td>
+                <td><input type="number" style="width:200px" name="RV" min="1" max="90000000" required/></td>
+            </tr>
+
+            <tr>
+                <td>Email Address: </td>
+                <td>
+                    <select name="Email" style="width:200px" required>
+                        <option value="">Select Email Address</option>
+                        @foreach (var data in Model.EmailAddressDropDownProperty)
+                        {
+                            <option @data.EmailAddress>@data.EmailAddress</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <input type="submit" />
+    </form>
+</body>
+</html>

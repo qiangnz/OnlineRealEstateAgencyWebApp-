@@ -1,0 +1,166 @@
+﻿* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+
+.col-1 {
+    width: 8.33%;
+    float: left;
+    padding: 15px;
+}
+
+.col-2 {
+    width: 16.66%;
+    float: left;
+    padding: 15px;
+}
+
+.col-3 {
+    width: 25%;
+    float: left;
+    padding: 15px;
+}
+
+.col-4 {
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+}
+
+.col-5 {
+    width: 41.66%;
+    float: left;
+    padding: 15px;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.col-7 {
+    width: 58.33%;
+    float: left;
+    padding: 15px;
+}
+
+.col-8 {
+    width: 66.66%;
+    float: left;
+    padding: 15px;
+}
+
+.col-9 {
+    width: 75%;
+    float: left;
+    padding: 15px;
+}
+
+.col-10 {
+    width: 83.33%;
+    float: left;
+    padding: 15px;
+}
+
+.col-11 {
+    width: 91.66%;
+    float: left;
+    padding: 15px;
+}
+
+.col-12 {
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+
+
+
+.header {
+    background-color: #023e8a;
+    color: #ffffff;
+    padding: 15px;
+}
+
+
+.menu {
+    overflow: hidden;
+    background-color: #caf0f8;
+}
+
+.menu ul{
+    list-style:none;
+    text-align:center;
+}
+
+.menu li{
+    display:inline-block;
+}
+
+
+    .menu a {
+        display: block;
+        color: #03045e;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        .menu a:hover {
+            background-color: #90e0ef;
+        }
+
+img {
+    max-width: 80%;
+    height:auto;
+}
+table, th, td {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.a {
+    table-layout: auto;
+    width: 70%;
+}
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+    border: 1px solid black;
+}
+
+#t01 tr:nth-child(odd) {
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+#t01 th {
+    background-color: black;
+    color: white;
+}
+
+
+table.b {
+    width:auto;
+    }
+
+
+
+
+
+

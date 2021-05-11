@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/script/modernizr-2.8.3.js"></script>
+</head>
+
+<body>
+    <h2>Search Result</h2>
+    <br />
+    <table class="a" id="t01">
+        <tr>
+            <th>ID</th>
+            <th>Suburb</th>
+            <th>Location</th>
+            <th>Number of Rooms</th>
+            <th>Property Type</th>
+            <th>Floor Area</th>
+            <th>Land Area</th>
+            <th>RV</th>
+            <th>Email</th>
+        </tr>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.PId</td>
+                <td>@i.Suburb</td>
+                <td>@i.Location</td>
+                <td>@i.NumberofRooms</td>
+                <td>@i.PropertyType</td>
+                <td>@i.FloorArea</td>
+                <td>@i.LandArea</td>
+                <td>@i.RV</td>
+                <td>@i.Email</td>
+            </tr>
+        }
+    </table>
+    <br />
+</body>
+</html>

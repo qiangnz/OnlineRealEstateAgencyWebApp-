@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/script/modernizr-2.8.3.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1 style="text-align:center;">Online Real Eastate Agency</h1>
+    </div>
+
+    <div class="row" style="text-align:center;">
+        <div class="col-12 menu">
+            <ul>
+                <li><a href="~/Home/Index"> Home </a></li>
+                <li><a href="~/SellerRegistration/Index"> Seller Registration </a></li>
+                <li><a href="~/AddHouse/Index"> Add a New House </a></li>
+                <li><a href="~/DeleteHouse/Index"> Delete a House</a></li>
+                <li><a href="~/UpdateSellerContact/Index"> Update Seller Contact </a></li>
+                <li><a href="~/SearchHouse/Index"> Search House</a></li>
+            </ul>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        @RenderBody()
+        <br />
+    </div>
+    <div class="header">
+        <h4 style="text-align:center;">SD7501 Web Application Development</h4>
+        <h4 style="text-align:center;">Assignment 2</h4>
+        <h4 style="text-align:center;">Qiang Zhang 2173138</h4>
+        <h4 style="text-align:center;">1 May 2021</h4>
+
+    </div>
+
+</body>
+</html>

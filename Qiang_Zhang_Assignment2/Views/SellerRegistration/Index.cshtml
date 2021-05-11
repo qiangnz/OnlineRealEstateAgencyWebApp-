@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/script/modernizr-2.8.3.js"></script>
+</head>
+
+<body>
+        <h2>Seller Registration</h2>
+            <br/>
+        <form method="post" action="~/SellerRegistration/addNewSeller">
+            <table class="b">
+                <tr>
+                    <td>First Name: </td>
+                    <td><input type="text" name="FirstName"  pattern="[a-zA-Z\s]+$" title="Please Input Letters as First Name" required/></td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td>
+                    <td><input type="text" name="LastName"  pattern="[a-zA-Z\s]+$" title="Please Input Letters as Last Name" required/></td>
+                </tr>
+                <tr>
+                    <td>Address: </td>
+                    <td><input type="text" name="Address" required/></td>
+                </tr>
+                <tr>
+                    <td>Phone Number: </td>
+                    <td><input type="tel" name="PhoneNumber" pattern="[0-9]{10,}" title="Please Input 10 Numbers As Phone Number" required/></td>
+                </tr>
+                <tr>
+                    <td>Email Addresse: </td>
+                    <td><input type="email" name="EmailAddress" title="Please Input Correct Email Address" required /></td>
+                    @*<td><input type="text" name="EmailAddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please Input Correct Email Address" required /></td>*@
+                </tr>
+            </table>
+            <br />
+            <input type="submit" />
+        </form>
+    </body>
+</html>

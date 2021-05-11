@@ -1,0 +1,19 @@
+{
+  "FilePath": "d:\\Studying T1 2021\\SD7501 Web Application Development\\Assignment2\\Qiang_Zhang_Assignment2\\Qiang_Zhang_Assignment2\\Qiang_Zhang_Assignment2.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": null,
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}
